@@ -24,7 +24,7 @@ export const printDuration = (startTime: [number, number]) =>
   prettyTime(process.hrtime(startTime))
     .replace(' ms', ' milliseconds')
     .replace(' s', ' seconds')
-    .replace(' m', ' minutes');
+    .replace(' min', ' minutes');
 
 const getAbsolutePath = <I extends string>(input: I): I =>
   dirname(require.resolve(join(input, 'package.json'))) as any;
